@@ -24,23 +24,6 @@ O pipeline implementa o fluxo mostrado no diagrama:
 
 ---
 
-## Estrutura sugerida do repositório
-
-```
-repo-root/
-├─ README.md                # este arquivo
-├─ template.yaml            # SAM template (infra as code)
-├─ src/
-│  ├─ inputProcessor.js     # Lambda que processa o arquivo S3 e envia mensagens para SQS
-│  ├─ outputProcessor.js    # Lambda que consome SQS e escreve no DynamoDB
-│  └─ package.json
-├─ sample/                  # arquivos de exemplo para testes
-│  └─ sample-bank-export.txt
-└─ .gitignore
-```
-
----
-
 ## template.yaml (AWS SAM)
 
 > Este arquivo cria: bucket S3, fila SQS, tabela DynamoDB e 2 Lambdas. Ajuste nomes/paths conforme necessário.
