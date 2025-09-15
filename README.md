@@ -1,6 +1,6 @@
 # Pipeline S3 → Lambda → SQS → Lambda → DynamoDB
 
-> Repositório exemplo para implementar o fluxo do diagrama S3 (arquivo do banco) que você enviou.
+> Repositório exemplo para implementar o fluxo do diagrama S3.
 
 ## Visão geral
 
